@@ -77,13 +77,7 @@
 				<category android:name="android.intent.category.MONKEY" />
 			</intent-filter>
 		</activity>
-		<activity android:name="MyLauncherSettings" android:label="@string/pref_label_settings" />
-		<activity android:name="ActivityPickerActivity" android:label="@string/pref_label_activities" />
-		<activity 
-			android:name="CustomShirtcutActivity"
-			android:label="@string/pref_label_shirtcuts"
-			android:theme="@android:style/Theme.Dialog"
-		/>
+
         <!-- Enable system-default search mode for any activity in Home -->
         <meta-data
             android:name="android.app.default_searchable"
@@ -99,13 +93,5 @@
 			</intent-filter>
 		</receiver>
 
-        <!-- The settings provider contains Home's data, like the workspace favorites -->
-        <provider
-            android:name="LauncherProvider"
-            android:authorities="com.android.launcher.settings"
-            android:writePermission="com.android.launcher.permission.WRITE_SETTINGS"
-            android:readPermission="com.android.launcher.permission.READ_SETTINGS" />
-
-		<activity android:name="com.android.launcher.catalogue.AppInfoMList"></activity>
     </application>
 </manifest>
