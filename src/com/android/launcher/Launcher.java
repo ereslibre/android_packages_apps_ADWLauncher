@@ -51,6 +51,7 @@ public final class Launcher extends Activity {
             int x = 0;
             int y = 0;
             Paint paint = new Paint();
+            paint.setAntiAlias(true);
             paint.setStyle(Paint.Style.FILL);
 
             // make the entire canvas white
@@ -64,7 +65,6 @@ public final class Launcher extends Activity {
             canvas.drawCircle(20, 20, 15, paint);
 
             // draw blue circle with antialiasing turned on
-            paint.setAntiAlias(true);
             paint.setColor(Color.BLUE);
             canvas.drawCircle(60, 20, 15, paint);
 
@@ -73,7 +73,6 @@ public final class Launcher extends Activity {
             // the second circle has a smooth perimeter
 
             // draw a solid green rectangle
-            paint.setAntiAlias(false);
             paint.setColor(Color.GREEN);
             canvas.drawRect(100, 5, 200, 30, paint);
 
@@ -108,7 +107,6 @@ public final class Launcher extends Activity {
             // draw some text using FILL style
             paint.setStyle(Paint.Style.FILL);
             //turn antialiasing on
-            paint.setAntiAlias(true);
             paint.setTextSize(30);
             canvas.drawText("Style.FILL", 75, 110, paint);
 
