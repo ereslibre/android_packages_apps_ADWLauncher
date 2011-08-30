@@ -17,7 +17,7 @@
 package com.android.launcher;
 
 import android.app.Activity;
-
+import android.os.Bundle;
 
 public final class Launcher extends Activity {
     @Override
